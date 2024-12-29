@@ -46,7 +46,7 @@ export default function SignUpForm() {
       router.push('/auth/signin');
       
     } catch (err) {
-      setError('Failed to create account. Please try again.');
+      setError('Failed to create account. Please try again.' + err);
     } finally {
       setIsLoading(false);
     }
